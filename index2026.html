@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Title -->
+  <title>90MILLION COFFEE — Specialty Café in Kochi | Croissants • Coffee • Hot Chocolate</title>
+
+  <!-- Canonical & Favicons -->
+  <link rel="canonical" href="https://90million.in/">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="90Million Coffee — a premium specialty Coffee Shop in Kaloor, Kochi. 100% Arabica espresso, single-origin Indian brews, artisan croissants baked in-house, and rich single-origin hot chocolate.">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:site_name" content="90MILLION COFFEE">
+  <meta property="og:title" content="90MILLION COFFEE — Specialty Café in Kochi">
+  <meta property="og:description" content="Croissants • Coffee • Hot Chocolate — artisan baking, carefully sourced beans, a place to pause.">
+  <meta property="og:image" content="https://90million.in/assets/gallery/croissant-stack.jpg">
+  <meta property="og:url" content="https://90million.in/">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #18181b; }
+    h1, h2, h3, .font-heading { font-family: 'Playfair Display', serif; }
+    
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .glass-card {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+    }
+    .glass-card:hover {
+      border-color: rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #09090b 40%, #52525b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://90million.in/#organisation",
+        "name": "90Million Coffee",
+        "url": "https://90million.in/",
+        "logo": "https://90million.in/public/assets/logo.png",
+        "founder": [
+          {"@type":"Person","name":"Sahil Siraj"},
+          {"@type":"Person","name":"Shany Shajahan"},
+          {"@type":"Person","name":"Akhil Mohan"}
+        ],
+        "sameAs": [
+          "https://instagram.90million.in",
+          "https://www.facebook.com/90millioncoffee"
+        ]
+      },
+      {
+        "@type": "CafeOrCoffeeShop",
+        "@id": "https://90million.in/#cafe",
+        "name": "90Million Coffee",
+        "image": "https://90million.in/public/assets/gallery/croissant-stack.jpg",
+        "url": "https://90million.in/",
+        "telephone": "+918848719090",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kaloor",
+          "addressLocality": "Kochi",
+          "addressRegion": "Kerala",
+          "postalCode": "682025",
+          "addressCountry": "IN"
+        },
+        "servesCuisine": ["Coffee", "Bakery", "Hot Chocolate"],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "08:00",
+            "closes": "22:00"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="selection:bg-zinc-900 selection:text-white">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="public/assets/logo.png" alt="90Million Coffee Logo" class="h-9 md:h-11 w-auto object-contain transition-transform group-hover:scale-105" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase text-zinc-600">
+        <a href="#about" class="hover:text-zinc-900 transition-colors">About</a>
+        <a href="#craft" class="hover:text-zinc-900 transition-colors">Our Craft</a>
+        <a href="#gallery" class="hover:text-zinc-900 transition-colors">Gallery</a>
+        <a href="#founders" class="hover:text-zinc-900 transition-colors">Founders</a>
+        <a href="#careers" class="hover:text-zinc-900 transition-colors">Careers</a>
+        <a href="#contact" class="hover:text-zinc-900 transition-colors">Contact</a>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="hidden md:flex items-center space-x-4">
+        <a href="tel:+918848719090" class="text-xs font-semibold uppercase tracking-widest px-4 py-2.5 rounded-full border border-zinc-200 hover:border-zinc-900 transition-all text-zinc-800">
+          +91 88487 19090
+        </a>
+        <a href="https://wa.me/918848719090" target="_blank" class="text-xs font-semibold uppercase tracking-widest px-5 py-2.5 rounded-full bg-zinc-900 text-white hover:bg-zinc-800 transition-all shadow-md font-bold">
+          Visit Us
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-btn" class="md:hidden flex flex-col items-center justify-center w-10 h-10 rounded-lg bg-zinc-100 border border-zinc-200 text-zinc-900 focus:outline-none" aria-label="Toggle Menu">
+        <span class="w-5 h-0.5 bg-zinc-900 mb-1 transition-all"></span>
+        <span class="w-5 h-0.5 bg-zinc-900 mb-1 transition-all"></span>
+        <span class="w-5 h-0.5 bg-zinc-900 transition-all"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE SIDE MENU -->
+  <div id="backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 z-50 md:hidden"></div>
+  <aside id="menu" class="fixed top-0 right-0 h-full w-80 max-w-[85%] bg-white border-l border-zinc-200 transform translate-x-full transition-transform duration-300 z-50 md:hidden flex flex-col justify-between p-6">
+    <div>
+      <div class="flex justify-between items-center pb-6 border-b border-zinc-100">
+        <img src="public/assets/logo.png" alt="90Million Coffee" class="h-8">
+        <button id="close-btn" class="text-2xl text-zinc-400 hover:text-zinc-900" aria-label="Close Menu">&times;</button>
+      </div>
+      <nav class="flex flex-col space-y-5 mt-8 text-base font-medium text-zinc-700">
+        <a href="#about" class="hover:text-zinc-900 transition-colors">About Us</a>
+        <a href="#craft" class="hover:text-zinc-900 transition-colors">Our Craft</a>
+        <a href="#gallery" class="hover:text-zinc-900 transition-colors">Gallery</a>
+        <a href="#founders" class="hover:text-zinc-900 transition-colors">Founders</a>
+        <a href="#careers" class="hover:text-zinc-900 transition-colors">Careers</a>
+        <a href="#contact" class="hover:text-zinc-900 transition-colors">Contact</a>
+      </nav>
+    </div>
+    <div class="space-y-3 pt-6 border-t border-zinc-100">
+      <a href="https://wa.me/918848719090" target="_blank" class="block w-full py-3 text-center rounded-xl bg-zinc-900 text-white font-semibold text-sm">
+        WhatsApp Us
+      </a>
+      <a href="tel:+918848719090" class="block w-full py-3 text-center rounded-xl border border-zinc-200 text-zinc-800 font-medium text-sm">
+        Call +91 88487 19090
+      </a>
+    </div>
+  </aside>
+
+  <!-- HERO SECTION -->
+  <section class="relative w-full pt-20 bg-zinc-900 overflow-hidden">
+    <img src="public/assets/logo.png" alt="90Million Coffee"
+         class="block md:hidden w-full h-[68vh] object-cover brightness-75" loading="eager" />
+    <video autoplay muted loop playsinline preload="metadata"
+           class="hidden md:block w-full h-[90vh] object-cover brightness-75"
+           poster="public/assets/gallery/latte.jpg">
+      <source src="public/assets/videos/coffee6.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 bg-gradient-to-t from-black/40 via-transparent to-black/20">
+      <img src="public/assets/logo.png" class="h-24 sm:h-32 md:h-56 mx-auto mb-4 md:mb-6 brightness-200" alt="90Million Coffee Logo" loading="lazy">
+      <p class="font-sans text-base sm:text-lg md:text-xl text-white/95 font-light tracking-widest uppercase">
+        Coffee • Culture • Community
+      </p>
+    </div>
+  </section>
+
+  <!-- BRAND PHILOSOPHY / ABOUT -->
+  <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div>
+        <span class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">A Space for Connection</span>
+        <h2 class="text-3xl sm:text-5xl font-bold text-zinc-900 mt-3 mb-6 leading-tight">
+          In a world that moves fast, we create pauses.
+        </h2>
+        <p class="text-zinc-600 text-base sm:text-lg leading-relaxed mb-6">
+          Every croissant tells a story. Every cup holds a conversation. Every silence feels warm. This is more than coffee—it’s 90Million.
+        </p>
+        <p class="text-zinc-600 text-base sm:text-lg leading-relaxed mb-8">
+          We’re not chasing trends. We’re building a space that lasts—a place where you can drink better, eat better, and live better.
+        </p>
+        
+        <div class="grid grid-cols-3 gap-6 pt-6 border-t border-zinc-100">
+          <div>
+            <span class="block text-2xl sm:text-3xl font-bold text-zinc-900 font-heading">100%</span>
+            <span class="text-xs text-zinc-500 uppercase tracking-wider font-medium">Specialty Arabica Beans</span>
+          </div>
+          <div>
+            <span class="block text-2xl sm:text-3xl font-bold text-zinc-900 font-heading">Artisan</span>
+            <span class="text-xs text-zinc-500 uppercase tracking-wider font-medium">Layers Baking Studio</span>
+          </div>
+          <div>
+            <span class="block text-2xl sm:text-3xl font-bold text-zinc-900 font-heading">Specialty</span>
+            <span class="text-xs text-zinc-500 uppercase tracking-wider font-medium">Manual Brews</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Visual Frame -->
+      <div class="relative">
+        <div class="aspect-[4/4] rounded-3xl overflow-hidden glass-card p-2 shadow-lg">
+          <video autoplay muted loop playsinline preload="metadata"
+                 class="w-full h-full object-cover rounded-2xl"
+                 poster="public/assets/gallery/latte.jpg">
+            <source src="public/assets/featured/Manual Brew.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR THREE PILLARS (CRAFT) -->
+  <section id="craft" class="py-24 bg-zinc-50 border-y border-zinc-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">Crafted With Passion</span>
+        <h2 class="text-3xl sm:text-5xl font-bold text-zinc-900 mt-3 mb-4">Our Core Offerings</h2>
+        <p class="text-zinc-600">From buttery croissants to rich hot chocolate, every item is made to bring people closer.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Pillar 1: Coffee -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-900 text-xl mb-6">
+              ☕
+            </div>
+            <h3 class="text-2xl font-bold text-zinc-900 mb-3">Our Coffee</h3>
+            <p class="text-zinc-600 text-sm leading-relaxed mb-6">
+              Built on 100% specialty Arabica. Featuring Ratnagiri Estate beans — known for clean, balanced cups with fruit-forward and chocolate notes. Double washed processing brings clarity and precision to every extraction.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-100 text-xs text-zinc-500 font-semibold tracking-wider uppercase">
+            Double Washed Process
+          </div>
+        </div>
+
+        <!-- Pillar 2: Croissants -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-900 text-xl mb-6">
+              🥐
+            </div>
+            <h3 class="text-2xl font-bold text-zinc-900 mb-3">Our Croissants</h3>
+            <p class="text-zinc-600 text-sm leading-relaxed mb-6">
+              Croissants aren’t just pastries here — they’re a ritual. Made in-house at our Baking Studio - The Layers, rolled and baked by us — folded with care, baked golden. Tradition meeting obsession.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-100 text-xs text-zinc-500 font-semibold tracking-wider uppercase">
+            Baked at Layers.
+          </div>
+        </div>
+
+        <!-- Pillar 3: Hot Chocolate -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-900 text-xl mb-6">
+              🍫
+            </div>
+            <h3 class="text-2xl font-bold text-zinc-900 mb-3">Our Hot Chocolate</h3>
+            <p class="text-zinc-600 text-sm leading-relaxed mb-6">
+              More than comfort — it’s craft. Our hot chocolate is made with single-origin cacao, sourced from farms in Kanjirapilly, Kottayam, Kerala — whisked into rich, velvety cups that carry the story of the farms they come from. Pure, deep, and unforgettable.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-100 text-xs text-zinc-500 font-semibold tracking-wider uppercase">
+            Single-Origin Cacao
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUSTAINABILITY -->
+  <section id="sustainability" class="py-20 border-b border-zinc-100 text-center bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <span class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">Mindful Practices</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-zinc-900 mt-2 mb-6">Sustainability</h2>
+      <p class="text-zinc-600 text-base sm:text-lg leading-relaxed">
+        We minimize plastic. From cornstarch straws to paper-first packaging, sustainability is baked into every detail — just like butter in our croissants. Cafés should nourish, not pollute.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <span class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">Visual Atmosphere</span>
+        <h2 class="text-3xl sm:text-5xl font-bold text-zinc-900 mt-2">Crafted with Attention</h2>
+      </div>
+      <p class="text-zinc-500 text-sm max-w-md mt-4 md:mt-0">
+        A menu that’s simple, but memorable. Here is a glimpse inside our daily prep.
+      </p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="glass-card rounded-2xl overflow-hidden aspect-[4/4] group relative p-1.5">
+        <img src="public/assets/gallery/tiramisu.jpeg" alt="Tiramisu" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden aspect-[4/4] group relative p-1.5">
+        <img src="public/assets/gallery/crois sandwich.jpeg" alt="Croissant Sandwich" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden aspect-[4/4] group relative p-1.5">
+        <img src="public/assets/gallery/drinks.jpeg" alt="Beverages" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden aspect-[4/4] group relative p-1.5">
+        <img src="public/assets/gallery/manager.jpeg" alt="Café Operations" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden aspect-[4/4] group relative p-1.5">
+        <img src="public/assets/gallery/Tir latte.jpeg" alt="Tiramisu Latte" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden aspect-[4/4] group relative p-1.5">
+        <img src="public/assets/gallery/team.jpg" alt="Our Team" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden aspect-[4/4] group relative p-1.5">
+        <img src="public/assets/gallery/bowl.jpeg" alt="Acai Bowl" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden aspect-[4/4] group relative p-1.5">
+        <img src="public/assets/gallery/croissant 1.jpeg" alt="Fresh Croissant" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden aspect-[4/4] group relative p-1.5">
+        <img src="public/assets/gallery/matcha.jpg" alt="Matcha Latte" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
+      </div>
+    </div>
+  </section>
+
+  <!-- MEET THE FOUNDERS -->
+  <section id="founders" class="py-24 bg-zinc-50 border-t border-zinc-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">Vision & Passion</span>
+        <h2 class="text-3xl sm:text-5xl font-bold text-zinc-900 mt-3 mb-4">Meet the Founders</h2>
+        <p class="text-zinc-600 text-base sm:text-lg leading-relaxed">
+          90Million Coffee was founded with a vision to create a space where exceptional coffee, artisan baking, and meaningful experiences come together. Built from an obsession with quality and attention to detail.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Founder 1 -->
+        <div class="glass-card rounded-3xl p-8 text-center group hover:-translate-y-2 transition-all duration-300">
+          <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-2 border-zinc-200 p-1">
+            <img src="public/assets/gallery/sahil.jpeg" alt="Sahil Siraj" class="w-full h-full object-cover rounded-full transition-all duration-500" />
+          </div>
+          <h3 class="text-2xl font-bold text-zinc-900">Sahil Siraj</h3>
+          <p class="text-xs uppercase tracking-widest text-zinc-500 font-semibold mt-1 mb-4">Founder</p>
+          <p class="text-zinc-600 text-sm leading-relaxed">
+            Founder of 90Million Coffee, leading the vision, brand, concept development, menu engineering, customer experience, and business strategy behind the company.
+          </p>
+        </div>
+
+        <!-- Founder 2 -->
+        <div class="glass-card rounded-3xl p-8 text-center group hover:-translate-y-2 transition-all duration-300">
+          <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-2 border-zinc-200 p-1">
+            <img src="public/assets/gallery/sha.jpeg" alt="Shany Shajahan" class="w-full h-full object-cover rounded-full transition-all duration-500" />
+          </div>
+          <h3 class="text-2xl font-bold text-zinc-900">Shany Shajahan</h3>
+          <p class="text-xs uppercase tracking-widest text-zinc-500 font-semibold mt-1 mb-4">Co-Founder</p>
+          <p class="text-zinc-600 text-sm leading-relaxed">
+            Co-founder of 90Million Coffee, contributing to the growth, finance, operations, and long-term development of the company.
+          </p>
+        </div>
+
+        <!-- Founder 3 -->
+        <div class="glass-card rounded-3xl p-8 text-center group hover:-translate-y-2 transition-all duration-300">
+          <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-2 border-zinc-200 p-1">
+            <img src="public/assets/gallery/akh.jpeg" alt="Akhil Mohan" class="w-full h-full object-cover rounded-full transition-all duration-500" />
+          </div>
+          <h3 class="text-2xl font-bold text-zinc-900">Akhil Mohan</h3>
+          <p class="text-xs uppercase tracking-widest text-zinc-500 font-semibold mt-1 mb-4">Co-Founder</p>
+          <p class="text-zinc-600 text-sm leading-relaxed">
+            Co-founder of 90Million Coffee, supporting the company's expansion and operational excellence.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CAREERS CTA SECTION -->
+  <section id="careers" class="relative py-28 overflow-hidden bg-zinc-900 text-white">
+    <div class="absolute inset-0 z-0 opacity-30">
+      <video autoplay muted loop playsinline preload="metadata"
+             class="w-full h-full object-cover"
+             poster="public/assets/gallery/latte.jpg">
+        <source src="public/assets/videos/careers6.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6">
+      <span class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">Join the Team</span>
+      <h2 class="text-3xl sm:text-5xl font-bold text-white mt-3 mb-6">Building More Than a Café</h2>
+      <p class="text-zinc-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
+        We’re building a culture. If you vibe with coffee, people, and good energy, we’d love to meet you.
+      </p>
+      
+      <a href="https://forms.gle/8EYwaHiqZ1cST98F6" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-zinc-900 font-semibold hover:bg-zinc-100 transition-all shadow-xl font-bold">
+        <span>Explore Careers</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT & LOCATION -->
+  <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+      
+      <div>
+        <span class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">Reach Out</span>
+        <h2 class="text-3xl sm:text-5xl font-bold text-zinc-900 mt-3 mb-6">Contact Us</h2>
+        <p class="text-zinc-600 leading-relaxed mb-8">
+          We’d love to hear from you! Reach out to us anytime or visit us at our flagship café in Kaloor.
+        </p>
+
+        <div class="space-y-6 text-zinc-700">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-900 shrink-0">📍</div>
+            <div>
+              <strong class="block text-zinc-900">Location</strong>
+              <p class="text-sm text-zinc-500">Kaloor, Kochi, Kerala 682025</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-900 shrink-0">📧</div>
+            <div>
+              <strong class="block text-zinc-900">Email</strong>
+              <p class="text-sm text-zinc-500"><a href="mailto:hello@90million.in" class="hover:text-zinc-900 transition-colors">hello@90million.in</a></p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-900 shrink-0">📞</div>
+            <div>
+              <strong class="block text-zinc-900">Phone</strong>
+              <p class="text-sm text-zinc-500"><a href="tel:+918848719090" class="hover:text-zinc-900 transition-colors">+91 88487 19090</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 mt-8 pt-8 border-t border-zinc-100">
+          <a href="https://wa.me/918848719090" target="_blank" class="px-6 py-3 rounded-xl bg-zinc-900 text-white font-semibold text-sm hover:bg-zinc-800 transition-all">
+            Chat on WhatsApp
+          </a>
+          <a href="https://instagram.90million.in" target="_blank" class="px-6 py-3 rounded-xl border border-zinc-200 text-zinc-800 hover:bg-zinc-50 font-medium text-sm transition-all">
+            Follow on Instagram
+          </a>
+        </div>
+      </div>
+
+      <!-- Map Frame -->
+      <div class="glass-card rounded-3xl overflow-hidden p-2 min-h-[350px]">
+        <iframe 
+          title="90Million Coffee Location Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.172289139598!2d76.3019!3d9.9873281!2m3!1f0!0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d1d855174e9%3A0x3dc187468ed86482!2s90Million%20Coffee!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+          class="w-full h-full rounded-2xl border-0 min-h-[350px]"
+          allowfullscreen="" 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-zinc-100 py-8 text-center text-zinc-500 text-sm">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-zinc-400">© 2026 90Million Coffee. All rights reserved.</p>
+      <div class="flex items-center space-x-6 text-xs text-zinc-500">
+        <a href="#about" class="hover:text-zinc-900 transition-colors">About</a>
+        <a href="#craft" class="hover:text-zinc-900 transition-colors">Craft</a>
+        <a href="#founders" class="hover:text-zinc-900 transition-colors">Founders</a>
+        <a href="#contact" class="hover:text-zinc-900 transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- NAVIGATION SCRIPT -->
+  <script>
+    const body = document.body;
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const closeBtn = document.getElementById('close-btn');
+    const backdrop = document.getElementById('backdrop');
+
+    function openMenu() {
+      menu.classList.remove('translate-x-full');
+      backdrop.classList.remove('pointer-events-none', 'opacity-0');
+      backdrop.classList.add('opacity-100');
+      body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      menu.classList.add('translate-x-full');
+      backdrop.classList.add('pointer-events-none', 'opacity-0');
+      backdrop.classList.remove('opacity-100');
+      body.style.overflow = '';
+    }
+
+    menuBtn?.addEventListener('click', openMenu);
+    closeBtn?.addEventListener('click', closeMenu);
+    backdrop?.addEventListener('click', closeMenu);
+    
+    document.querySelectorAll('#menu a').forEach(a => {
+      a.addEventListener('click', closeMenu);
+    });
+  </script>
+
+</body>
+</html>
